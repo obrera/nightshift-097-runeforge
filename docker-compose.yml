@@ -1,0 +1,9 @@
+services:
+  runeforge:
+    build: .
+    restart: unless-stopped
+    environment:
+      PORT: "3000"
+      PUBLIC_BASE_URL: "https://runeforge097.colmena.dev"
+      RPC_URL: "https://api.devnet.solana.com"
+      RPC_WS_URL: "wss://api.devnet.solana.com"
